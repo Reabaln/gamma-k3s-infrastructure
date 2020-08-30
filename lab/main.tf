@@ -35,6 +35,7 @@ module "tags_controlplane" {
   tags = {
     owner = var.name
     type  = "controlplane"
+    name  = format("controlplane-%s", var.name)
   }
 }
 
